@@ -18,7 +18,7 @@ export class HelloWorldService {
         const request = new HelloRequest();
         request.setText(text);
         this.client.hello(
-            request, (error: ServiceError | null, response: HelloResponse) => {
+            request, (error: any, response: any) => {
                 // Your code to handle error & response.
                 console.log('Error: ' + error);
                 console.log('HelloResponse: ' + response);
